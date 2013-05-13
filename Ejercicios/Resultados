@@ -1,0 +1,15 @@
+1-1: $('#target').css('background-color','red');
+1-2: $('#target span').text('Lo logre');
+1-3: $('.target button').attr('disabled','disabled');
+1-4: $('.target input').removeAttr('checked');
+1-5: $('#target input').attr('readonly','readonly');
+
+2-1: var target = $('#target');
+
+3-1: $('.target').eq(1).css('background','red');
+3-2: $('#target select option').eq(1).attr('selected','selected');
+target.css({width: target.width() * 2, height: target.height() * 2});
+
+4-1: $('#target span').clone().insertAfter('#target span');
+4-2: $('#child').appendTo('#parent2');
+4-3: $('#target').empty();
