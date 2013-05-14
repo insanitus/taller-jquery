@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<style>
+		body{background-color: gray;}
+		.emphasis {color: red;}
+	</style>
+	<script>
+		//Forma abreviada de llamar a document.ready
+		$(function(){
+			$('li:first-child').addClass('emphasis');
+		});
+		
+		//Verifico que el documento este cargado y luego ejecuto la función
+		/*$(document).ready(function() {
+			$('li:first-child').addClass('emphasis');	
+		});*/
+		
+	</script>
+</head>
+<body>
+
+<div class="container">
+	<h1>Welcome to My Website </h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+		<span>otra cosa</span>
+	</p>
+	<span>mas cosas</span>
+
+		<ul class="container">
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3</li>
+			<li>item 4</li>
+			<li>item 5</li>
+			<li>
+				<ul>
+					<li>hello from the nest.</li>
+				</ul>
+			</li>
+		</ul>
+
+</div>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>-->
+<script src="jquery-1.7.2.js"></script>
+
+<script>
+	//hijos directos de la lista a color verde
+	//$('ul.emphasis').children('li')).css('color','blue');
+	
+	//todos los elementos debajo de la lista a color rojo
+	//$('ul.emphasis').find('li').css('color','yellow');
+	
+	//Solo el primero
+	//$('ul.emphasis').children('li:first').css('color','yellow');
+	//$('ul.emphasis').children('li:first-child').css('color','yellow');
+	//$('ul.emphasis').children('li').first().css('color','yellow');
+	
+	//Agregar texto desde jQuery
+	//$('ul.emphasis').children('li:nth-child(2)').text('se cambio magicamente');
+	//$('ul.emphasis').children('li').eq(0).text('al primero lo cambio con magia');
+	
+	//Siguiente o anterior elemento de una ya seleccionado
+	//$('ul.emphasis').children('li').eq(1).next().text('the first added with jQuery');
+	//$('ul.emphasis').children('li').eq(4).prev().text('the first added with jQuery');
+	
+	//Elemento en especifico por numero
+	//NOTA ES CHILD y no CHILDREN y cuentan a partir de uno
+	//$('ul.emphasis li:nth-child(2)').text('the first added with jQuery');
+	
+	//Padre directo y quitar clases
+	//$('li').parent().removeClass('emphasis');
+	
+	//Todos los padres que cumplan con una caracteristica
+	//$('li').parents('ul').removeClass('emphasis');
+	
+	//Diferencia entre closest y parents
+	//Closets se detiene en el primero que encuentra
+	//$('li').parents('.container').removeClass('container');
+	//$('li').closest('.container').removeClass('container');
+	// console.log($('ul').parents('.container'));
+	// console.log($('ul').closest('.container'));
+
+	//Hermanos
+	//$('li:first').siblings('li').text('son hermanos');
+
+</script>
+
+</body>
+</html>

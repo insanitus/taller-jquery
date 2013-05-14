@@ -23,3 +23,21 @@
 3. Recorriendo el DOM con nth-child, eq, next y prev
 
 # SEGUNDA SESION
+
+## Parte 4
+1. Contar elementos
+1. Clonación
+1. Inserciones a DOM
+1. Mover elementos en DOM
+1. Quitar hijos
+
+## Parte 5
+1. Filtros
+1. Animaciones
+
+## Parte 6
+1. Funciones
+1. this vs $(this)
+1. Eventos
+
+

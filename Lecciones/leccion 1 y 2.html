@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title></title>
+		<style>
+			body{
+				background-color: gray;
+			}
+			li { color: red;}
+			.emphasis { color: black;}
+		</style>
+	</head>
+	<body>
+		<h1>Practicando jQuery (Lección 1 y 2)</h1>
+		<p>Algo de contenido</p>
+		<ul>
+			<li>hello</li>
+			<li>hi</li>		
+		</ul>
+		<li>afuera</li>
+		<p>Esto es un párrafo</p>
+		<a href="http://google.com">Link a google</a>
+		<script src="jquery-1.7.2.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>-->
+		<script>
+			/* Obteniendo los elementos del dom y mostrandolos en la consola */
+			var $lis = jQuery('ul li');
+			console.log($lis);
+
+			
+			/* Asignado un css a los elementos del dom */
+			jQuery('p').css('color','white');
+			
+			/* Asignando una clase css a los elementos del dom */
+			jQuery('ul li').addClass('emphasis');
+			
+			/* Manera corta de llamar a jQuery */
+			$('h1').addClass('emphasis');
+
+			/*Quitar una clase*/
+			$('ul li').removeClass('emphasis');
+
+			//Obtener el primer elemento con pseudoclases
+			var primero = $('ul li:first-child');
+
+			//Alto y ancho
+			console.log(primero.width());
+			console.log(primero.height());
+
+			//Cambiar el texto
+			$('a').text('este es un link');
+
+			//Cambiar atributos
+			$('a').attr('http://www.gmail.com');
+			$('a').attr('id','link_1');
+
+			//Remover atributos
+			$('a').removeAttr('id');
+		</script>
+	</body>
+</html>

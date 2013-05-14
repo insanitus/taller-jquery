@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<style>
+		body {
+
+		}
+		.oculta{
+			display: none;
+		}
+		.caja {
+			width: 200px;
+			min-height: 200px;
+		}
+		.rojo {
+			background-color: red;
+			color: white;
+		}
+		.yellow {
+			background-color: yellow;
+			color: black;
+		}
+		span {
+			color: blue;
+		}
+	</style>
+
+</head>
+<body>
+
+<div class="container">
+	<h1>Segunda sesión de jQuery</h1>
+
+	<div class="caja oculta yellow">Primer div</div>
+	<div class="caja rojo">Segundo div</div>
+
+	<ul class="container">
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+		<li>item 4</li>
+		<li>item 5</li>
+		<li>
+			<ul>
+				<li>sub-item 1</li>
+			</ul>
+		</li>
+	</ul>
+
+	<div class="rojo">Algo en el div</div>
+</div>
+
+<script src="jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	/* Pares */
+	//$('li:even').css('color','red');
+
+	/* Impares */
+	//$('li:odd').css('color','red');
+
+	/* El primero */
+	//$('li:first').css('color','red');
+
+	/* El ultimo */
+	//$('li:last').css('color','red');
+	
+	/* Animaciones */
+	//Se usa fontSize en lugar de font-size,
+	//$('.rojo').animate({fontSize: 45}, 1000);
+	
+	/* Fade in y out*/
+	//$('div.caja.oculta').fadeIn(1000);
+	//$('div.caja').fadeOut('slow');
+	
+	/* Sliding */
+/*	if($('div.caja.oculta').is(':hidden')){
+		$('div.caja.oculta').slideDown('slow');
+	}*/
+
+
+</script>

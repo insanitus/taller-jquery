@@ -5,11 +5,17 @@
 1-5: $('#target input').attr('readonly','readonly');
 
 2-1: var target = $('#target');
+target.css({width: target.width() * 2, height: target.height() * 2});
 
 3-1: $('.target').eq(1).css('background','red');
-3-2: $('#target select option').eq(1).attr('selected','selected');
-target.css({width: target.width() * 2, height: target.height() * 2});
+3-2: $('#target select option').eq(1).attr('selected','selected'); 
 
 4-1: $('#target span').clone().insertAfter('#target span');
 4-2: $('#child').appendTo('#parent2');
 4-3: $('#target').empty();
+4-4: console.log($('#target').find('.child').size());
+4-5: $('#target').children().not('h2').remove();
+
+5-1: var target = $('#target');
+target.animate({width: target.width() * 2, height: target.height() * 2}, 1000);
+5-2: $('div').slideDown(5000);

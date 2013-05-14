@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<style>
+		body {
+
+		}
+		.caja {
+			width: 200px;
+			min-height: 200px;
+		}
+		.rojo {
+			background-color: red;
+			color: white;
+		}
+		.verde {
+			background-color: green;
+			color: white;
+		}
+		span {
+			color: blue;
+		}
+	</style>
+
+</head>
+<body>
+
+<div class="container">
+	<h1>Segunda sesión de jQuery</h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+		<span>otra cosa</span>
+	</p>
+	<span>mas cosas</span>
+
+	<div>
+		<ul class="container">
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3</li>
+			<li>item 4</li>
+			<li>item 5</li>
+			<li>Sublista
+				<ul>
+					<li>hello from the nest.</li>
+				</ul>
+			</li>
+		</ul>
+		Algo aqui
+	</div>
+
+	<div id="caja-roja" class="caja rojo"></div>
+	<div id="caja-verde" class="caja verde"></div>
+
+</div>
+
+<script src="jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	/* Contar elementos */
+	//$('li').size()
+	//$('ul li').size()
+	//$('ul.container li').size()
+	//$('ul.container > li').size()
+
+	/* Clonamos la lista */
+	//var lista = $('ul.container').clone();
+	//console.log(lista);
+
+	/* Agregar elementos al DOM al final*/
+	//lista.appendTo('#caja-verde');
+
+	/* Agregar elementos al DOM al inicio */
+	//var parrafo = $('p').clone();
+	//parrafo.prependTo('#caja-verde');
+
+	/* Moviendo elementos */
+	//$('#caja-roja').append($('h1'));
+	//$('h1').appendTo($('#caja-roja'));
+
+	/* Mover con prepend */
+	//$('span').prependTo($('#caja-roja'));
+	//$('#caja-roja').prepend($('span'));
+
+	/* Insertar antes y despues de un elemento */
+	//$('div').after(parrafo);
+	//parrafo.insertAfter($('div'));
+	//$('div').before(parrafo);
+	//parrafo.insertBefore($('div'));
+
+	/* Envolver elementos */
+	//$('p').wrap('<strong></strong>');
+
+	/* Quitar al padre */
+	//$('ul li').unwrap();
+
+	/* Quitar los nodos hijos */
+	//$('div').eq(1).empty();
+
+	/* Quitar algo */
+	//$('h1').remove();
+
+	/* Omitir algo */
+	//$('li').not($('li').eq(1)).remove();
+	
+	
+</script>
